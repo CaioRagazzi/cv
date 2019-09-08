@@ -3,7 +3,7 @@ const profile = {
   title: 'Software Engineer',
   mail: 'ca.ragazzi@gmail.com',
   phoneNumber: '+55 (11) 96835-8191',
-  website: 'https://caioragazzi.herokuapp.com/',
+  website: 'caioragazzi.herokuapp.com/',
   linkedin: 'linkedin.com/in/caioragazzi/',
   github: 'github.com/CaioRagazzi',
   imagePath: 'profile.png',
