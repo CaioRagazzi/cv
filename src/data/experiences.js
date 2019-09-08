@@ -6,7 +6,7 @@ export const experiences = {
     {
       title: 'Full-Stack Developer',
       company: 'Intermeio Soluções de Pagamento',
-      description: 'I\'m working as a full stack developer at Intermeio. Using .Net Core in the back-end, VueJS in the front-end and Flutter for mobile',
+      description: 'I\'m working as a full stack developer at Intermeio using: </br><ul><li>Net Core / Entity Framework in the back-end for the main API</li><li>VueJS for the front-end application</li><li>Flutter for mobile applications</li></ul>',
       companyLink: 'https://intermeio.com/',
       companyShortDetail: '',
       date: '2019.03 - Present'

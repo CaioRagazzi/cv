@@ -12,7 +12,21 @@ export const tags = {
     'C#',
     'ASP.NETMVC',
     'SOLID PRINCIPLES',
-    'LINQ']
+    'LINQ',
+    'Microsoft .NET',
+    'Microsoft SQL Server',
+    'HTML5',
+    'CSS',
+    'Jenkins',
+    'ASP.NET MVC',
+    'Bootstrap',
+    'Entity Framework',
+    'Node.js',
+    'NoSQL',
+    'VueJs',
+    'APIs'
+
+  ]
 };
 
 export default tags;
