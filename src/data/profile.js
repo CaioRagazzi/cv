@@ -1,6 +1,6 @@
 const profile = {
   name: 'Caio Ragazzi',
-  title: 'Full Stack Developer',
+  title: 'Software Engineer',
   mail: 'ca.ragazzi@gmail.com',
   phoneNumber: '+55 (11) 96835-8191',
   website: 'https://caioragazzi.herokuapp.com/',

@@ -4,7 +4,7 @@ export const experiences = {
   description: null,
   list: [
     {
-      title: 'Software Engineer',
+      title: 'Full-Stack Developer',
       company: 'Intermeio Soluções de Pagamento',
       description: 'I\'m working as a full stack developer at Intermeio. Using .Net Core in the back-end, VueJS in the front-end and Flutter for mobile',
       companyLink: 'https://intermeio.com/',
@@ -12,7 +12,7 @@ export const experiences = {
       date: '2019.03 - Present'
     },
     {
-      title: 'Software Engineer',
+      title: 'Full-Stack Developer',
       company: 'Ragazzi Tech',
       description: 'I\'m a full stack developer in the company using the following frameworks: </br> <ul><li>ReactJS and VueJs in the front-end.</li><li>NodeJS in the back-end.</li><li>React Native for mobile applications.</li></ul>',
       companyLink: 'http://jotform.com',
