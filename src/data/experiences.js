@@ -15,7 +15,7 @@ export const experiences = {
       title: 'Full-Stack Developer',
       company: 'Ragazzi Tech',
       description: 'I\'m a full stack developer in the company using the following frameworks: </br> <ul><li>ReactJS and VueJs in the front-end.</li><li>NodeJS in the back-end.</li><li>React Native for mobile applications.</li></ul>',
-      companyLink: '',
+      companyLink: 'https://caioragazzi.herokuapp.com/',
       companyShortDetail: '',
       date: '2017.01 - Present'
     },
