@@ -3,7 +3,7 @@ const profile = {
   title: 'Full Stack Developer',
   mail: 'ca.ragazzi@gmail.com',
   phoneNumber: '+55 (11) 96835-8191',
-  website: 'sbaydin.com',
+  website: 'https://caioragazzi.herokuapp.com/',
   linkedin: 'linkedin.com/in/caioragazzi/',
   github: 'github.com/CaioRagazzi',
   imagePath: 'profile.png',
