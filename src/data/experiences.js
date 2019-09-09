@@ -33,7 +33,7 @@ export const experiences = {
       description: '<ul><li>CRM support for over 25 companies.</li><li>Monitoring of CRM in loco and services used by CRM (Zabbix).</li><li>Technical implementation of CRM for new clients;</li><li>Experience in functional and non-functional tests.</li><li>Test and support in-house software products.</li><li>Windows Server environment configuration for CRM operations (IIS, ASP.NET, Windows Services, and others).</li><li>Analyse and development of SQL Server (Procedures, views, functions, triggers, and others).</li><li>Improvement in performance of SQL and Windows Server Tunning.</li><li>SQL Server environment configuration for CRM operation (SQL Server installation and configuration).</li><li>Identification of software bugs;</li></ul>',
       companyLink: 'http://www.orbium.com.br/',
       companyShortDetail: '',
-      date: '2012.06 - 2012.10'
+      date: '2012.06 - 2018.08'
     }
   ]
 };
