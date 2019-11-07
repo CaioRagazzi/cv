@@ -5,19 +5,19 @@ export const experiences = {
   list: [
     {
       title: 'Full-Stack Developer',
+      company: 'Ragazzi Tech',
+      description: 'I\'m a full stack developer in the company using the following frameworks: </br> <ul><li>ReactJS and VueJs in the front-end.</li><li>NodeJS in the back-end.</li><li>React Native for mobile applications.</li></ul>',
+      companyLink: 'https://ragazzitech.herokuapp.com/',
+      companyShortDetail: '',
+      date: '2017.01 - Present'
+    },
+    {
+      title: 'Full-Stack Developer',
       company: 'Intermeio Soluções de Pagamento',
       description: 'I\'m working as a full stack developer at Intermeio using: </br><ul><li>Net Core / Entity Framework in the back-end for the main API</li><li>VueJS for the front-end application</li><li>Flutter for mobile applications</li></ul>',
       companyLink: 'https://intermeio.com/',
       companyShortDetail: '',
       date: '2019.03 - 2019.11'
-    },
-    {
-      title: 'Full-Stack Developer',
-      company: 'Ragazzi Tech',
-      description: 'I\'m a full stack developer in the company using the following frameworks: </br> <ul><li>ReactJS and VueJs in the front-end.</li><li>NodeJS in the back-end.</li><li>React Native for mobile applications.</li></ul>',
-      companyLink: 'https://caioragazzi.herokuapp.com/',
-      companyShortDetail: '',
-      date: '2017.01 - Present'
     },
     {
       title: 'Full-Stack Developer',
