@@ -6,7 +6,6 @@ export const tags = {
     'ReactJS',
     'ReactNative',
     'Redux',
-    'Webpack',
     'Npm/Yarn',
     'Git',
     'C#',
