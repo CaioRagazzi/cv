@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
@@ -9,7 +9,8 @@ import Experiences from './components/experiences';
 import Projects from './components/projects';
 import Tags from './components/tags';
 
-export default class CV extends Component {
+class CV extends Component {
+
   renderExperiencesSection() {
     if (this.props.experiences) {
       return (<Experiences {...this.props.experiences} />);
@@ -30,7 +31,7 @@ export default class CV extends Component {
   }
   renderOpenSourcePart() {
     return (<div></div>);
-  }     
+  }
   renderCareerProfile() {
     const { icon, sectionTitle, description } = this.props.careerProfile;
     const innerContent = (<div className="summary" dangerouslySetInnerHTML={{ __html: description }} />);
@@ -46,19 +47,22 @@ export default class CV extends Component {
   }
 
   render() {
+
     return (
-      <div className="wrapper">
-        <Sidebar
-          {...this.props.profile}
-        />
-        <div className="main-wrapper">
-          {this.renderCareerProfile()}
-          {this.renderExperiencesSection()}
-          {/* {this.renderProjectsSection()} */}
-          {this.renderTags()}
-          {this.renderOpenSourcePart()}
+      <Suspense fallback="Loading">
+        <div className="wrapper">
+          <Sidebar
+            {...this.props.profile}
+          />
+          <div className="main-wrapper">
+            {this.renderCareerProfile()}
+            {this.renderExperiencesSection()}
+            {/* {this.renderProjectsSection()} */}
+            {this.renderTags()}
+            {this.renderOpenSourcePart()}
+          </div>
         </div>
-      </div>
+      </Suspense>
     );
   }
 }
@@ -70,3 +74,5 @@ CV.propTypes = {
   projects: PropTypes.shape().isRequired,
   tags: PropTypes.shape().isRequired
 };
+
+export default CV
