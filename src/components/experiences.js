@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Section from './shared/section';
-import { withTranslation } from 'react-i18next';
 
 class Experiences extends Component {
-  renderListItem(item, i) {
-    const { t } = this.props;
-    console.log(t);
-    
+  renderListItem(item, i) {    
     return (
       <div className="item" key={`exp_item_${i}`}>
         <div className="meta">
@@ -46,7 +42,7 @@ class Experiences extends Component {
   }
 }
 
-export default withTranslation()(Experiences);
+export default Experiences;
 
 Experiences.propTypes = {
   list: PropTypes.arrayOf(PropTypes.shape()).isRequired,
