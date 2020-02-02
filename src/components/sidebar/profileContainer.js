@@ -19,7 +19,7 @@ function ProfileContainer(props) {
     if (language) {
       i18n.changeLanguage('en')      
     } else {
-      i18n.changeLanguage('pt')      
+      i18n.changeLanguage('pt-BR')      
 
     }
   }
