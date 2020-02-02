@@ -1,23 +1,41 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
+import Switch from "react-switch";
 
-export default class ProfileContainer extends Component {
-  renderProfilePicture(imagePath) {
+function ProfileContainer(props) {
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(false)
+
+  const renderProfilePicture = (imagePath) => {
     if (imagePath) {
       return (<img className="profile" src={imagePath} alt="" style={{ maxWidth: 185 }} />);
     }
     return null;
   }
-  render() {
-    return (
-      <div className="profile-container">
-        {this.renderProfilePicture(this.props.imagePath)}
-        <h1 className="name" style={{ fontSize: 25 }}>{ this.props.name }</h1>
-        <h3 className="tagline"> { this.props.title } </h3>
-      </div>
-    );
+
+  const changeLanguage = ( checked, event, id) => {
+    setLanguage(!language)
+    if (language) {
+      i18n.changeLanguage('en')      
+    } else {
+      i18n.changeLanguage('pt')      
+
+    }
   }
+
+  return (
+    <div className="profile-container">
+      {/* <Switch checked={language} onChange={changeLanguage} className="name"></Switch> */}
+      {renderProfilePicture(props.imagePath)}
+      <h1 className="name" style={{ fontSize: 25 }}>{props.name}</h1>
+      <h3 className="tagline"> {props.title} </h3>
+    </div>
+  );
+
 }
+
+export default ProfileContainer
 
 ProfileContainer.propTypes = {
   name: PropTypes.string.isRequired,

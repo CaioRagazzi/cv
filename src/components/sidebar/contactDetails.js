@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { withTranslation } from 'react-i18next';
 
-export default class ContactDetails extends Component {
+class ContactDetailsTranslated extends Component {
   renderListItem(className, data, iconName, type) {
     if (!data) { return null; }
     let href = data;
@@ -21,20 +22,23 @@ export default class ContactDetails extends Component {
     );
   }
   render() {
-    return (
+    const { t } = this.props;
+    return (      
       <div className="contact-container container-block">
         <ul className="list-unstyled contact-list">
-          {this.renderListItem('email', this.props.mail, 'fa-envelope', 'email')}
-          {this.renderListItem('phone', this.props.phoneNumber, 'fa-phone', 'phone')}
-          {this.renderListItem('website', this.props.website, 'fa-globe', 'link')}
-          {this.renderListItem('linkedin', this.props.linkedin, 'fa-linkedin', 'link')}
-          {this.renderListItem('github', this.props.github, 'fa-github', 'link')}
-          {this.renderListItem('twitter', this.props.twitter, 'fa-twitter', 'link')}
+          {this.renderListItem('email', t('ContactDetails.email'), 'fa-envelope', 'email')}
+          {this.renderListItem('phone', t('ContactDetails.phoneNumber'), 'fa-phone', 'phone')}
+          {this.renderListItem('website', t('ContactDetails.website'), 'fa-globe', 'link')}
+          {this.renderListItem('linkedin', t('ContactDetails.linkedin'), 'fa-linkedin', 'link')}
+          {this.renderListItem('github', t('ContactDetails.github'), 'fa-github', 'link')}
         </ul>
       </div>
     );
   }
 }
+const ContactDetails = withTranslation()(ContactDetailsTranslated)
+
+export default ContactDetails
 
 ContactDetails.propTypes = {
   mail: PropTypes.string.isRequired,
