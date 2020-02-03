@@ -18,18 +18,18 @@ function ProfileContainer(props) {
   const changeLanguage = (checked, event, id) => {
     setLanguage(checked)
     if (language) {
-      i18n.changeLanguage('en')
-    } else {
       i18n.changeLanguage('pt-BR')
+    } else {
+      i18n.changeLanguage('en')
     }
   }
 
   return (    
     <div className="profile-container">
       <div className="d-flex justify-content-center">
-        <p className="pr-3"> { t('LanguageDetails.english') } </p>
-        <Switch offColor={'#1E90FF'} onColor={'#888'} checkedIcon={false} uncheckedIcon={false} height={22} width={50} checked={language} onChange={changeLanguage} className="name"></Switch>
-        <p className="pl-3"> { t('LanguageDetails.portuguese') } </p>
+        <p className="pr-3"> { t('LanguageDetails.portuguese') } </p>
+        <Switch offColor={'#888'} onColor={'#1E90FF'} checkedIcon={false} uncheckedIcon={false} height={22} width={50} checked={language} onChange={changeLanguage} className="name"></Switch>
+        <p className="pl-3"> { t('LanguageDetails.english') } </p>
       </div>
 
       {renderProfilePicture(props.imagePath)}
