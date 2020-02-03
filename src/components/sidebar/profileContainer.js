@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Switch from "react-switch";
@@ -6,7 +6,12 @@ import Switch from "react-switch";
 function ProfileContainer(props) {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.languages[0]
-  const [language, setLanguage] = useState(currentLanguage.includes('pt') ? false : true)
+  
+  useEffect(() => {
+    i18n.changeLanguage('en')
+  }, [])
+  
+  const [language, setLanguage] = useState(true)
 
   const renderProfilePicture = (imagePath) => {
     if (imagePath) {
