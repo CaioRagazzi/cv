@@ -1,52 +1,77 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Section from './shared/section';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-class Experiences extends Component {
-  renderListItem(item, i) {    
-    return (
-      <div className="item" key={`exp_item_${i}`}>
+function Experiences() {
+  const { t } = useTranslation();
+
+  return (
+    <section className={`experieces-section`} id="experiences">
+      <h2 className="section-title">
+        <i className={`fa fa-briefcase`} />
+        {t('ExperiencesDetails.title')}
+      </h2>
+      <div className="item pb-3">
         <div className="meta">
           <div className="upper-row">
-            <h3 className="job-title">{item.title}</h3>
-            <div className="time">{item.date}</div>
+            <h3 className="job-title">{t('ExperiencesDetails.1.title')}</h3>
+            <div className="time">{t('ExperiencesDetails.1.date')}</div>
           </div>
-          {this.renderCompanySection(item.company, item.companyLink, item.companyShortDetail)}
+          <div className="company">
+            <a href={t('ExperiencesDetails.1.companyLink')} target="_blank"> {t('ExperiencesDetails.1.company')} </a> {''}
+          </div>
         </div>
         <div className="details">
-          <p dangerouslySetInnerHTML={{ __html: item.description }} />
+          <p dangerouslySetInnerHTML={{ __html: t('ExperiencesDetails.1.description') }} />
         </div>
       </div>
-    );
-  }
-  renderCompanySection(company, companyLink, companyShortDetail) {
-    if (company && companyLink) {
-      return (<div className="company"> <a href={companyLink} target="_blank">{company}</a> {companyShortDetail || ''}</div>);
-    }
-    return null;
-  }
-  render() {
-    const { icon, sectionTitle, list } = this.props;
-    return (
-      <Section
-        className="experieces-section"
-        icon={icon || 'briefcase'}
-        title={sectionTitle || 'Experiences'}
-        id="experiences"
-      >
-        {list.map((item, i) => {
-          return this.renderListItem(item, i);
-        })}
-      </Section>
-    );
-  }
+
+      <div className="item pb-3">
+        <div className="meta">
+          <div className="upper-row">
+            <h3 className="job-title">{t('ExperiencesDetails.2.title')}</h3>
+            <div className="time">{t('ExperiencesDetails.2.date')}</div>
+          </div>
+          <div className="company">
+            <a href={t('ExperiencesDetails.2.companyLink')} target="_blank"> {t('ExperiencesDetails.2.company')} </a> {''}
+          </div>
+        </div>
+        <div className="details">
+          <p dangerouslySetInnerHTML={{ __html: t('ExperiencesDetails.2.description') }} />
+        </div>
+      </div>
+
+      <div className="item pb-3">
+        <div className="meta">
+          <div className="upper-row">
+            <h3 className="job-title">{t('ExperiencesDetails.3.title')}</h3>
+            <div className="time">{t('ExperiencesDetails.3.date')}</div>
+          </div>
+          <div className="company">
+            <a href={t('ExperiencesDetails.3.companyLink')} target="_blank"> {t('ExperiencesDetails.3.company')} </a> {''}
+          </div>
+        </div>
+        <div className="details">
+          <p dangerouslySetInnerHTML={{ __html: t('ExperiencesDetails.3.description') }} />
+        </div>
+      </div>
+
+      <div className="item pb-3">
+        <div className="meta">
+          <div className="upper-row">
+            <h3 className="job-title">{t('ExperiencesDetails.4.title')}</h3>
+            <div className="time">{t('ExperiencesDetails.4.date')}</div>
+          </div>
+          <div className="company">
+            <a href={t('ExperiencesDetails.4.companyLink')} target="_blank"> {t('ExperiencesDetails.4.company')} </a> {''}
+          </div>
+        </div>
+        <div className="details">
+          <p dangerouslySetInnerHTML={{ __html: t('ExperiencesDetails.4.description') }} />
+        </div>
+      </div>
+    </section>
+  );
+
 }
 
 export default Experiences;
-
-Experiences.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.shape()).isRequired,
-  sectionTitle: PropTypes.string.isRequired,
-  icon: PropTypes.string
-};
-

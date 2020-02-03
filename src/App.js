@@ -1,78 +1,64 @@
-import React, { Component, Suspense } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import './assets/theme/styles.css';
-import Section from './components/shared/section';
+import Career from './components/career';
 import Sidebar from './components/sidebar';
 import Experiences from './components/experiences';
 import Projects from './components/projects';
 import Tags from './components/tags';
+import { useTranslation } from 'react-i18next';
 
-class CV extends Component {
+function CV(props) {
+  const { t, i18n } = useTranslation();
 
-  renderExperiencesSection() {
-    if (this.props.experiences) {
-      return (<Experiences {...this.props.experiences} />);
+  const renderExperiencesSection = () => {
+    if (props.experiences) {
+      return (<Experiences {...props.experiences} />);
     }
     return null;
   }
-  renderProjectsSection() {
-    if (this.props.projects) {
-      return (<Projects {...this.props.projects} />);
+  const renderProjectsSection = () => {
+    if (props.projects) {
+      return (<Projects {...props.projects} />);
     }
     return null;
   }
-  renderTags() {
-    if (this.props.tags) {
-      return (<Tags {...this.props.tags} />);
+  const renderTags = () => {
+    if (props.tags) {
+      return (<Tags {...props.tags} />);
     }
     return null;
   }
-  renderOpenSourcePart() {
+  const renderOpenSourcePart = () => {
     return (<div></div>);
   }
-  renderCareerProfile() {
-    const { icon, sectionTitle, description } = this.props.careerProfile;
-    const innerContent = (<div className="summary" dangerouslySetInnerHTML={{ __html: description }} />);
+  const renderCareerProfile = () => {
+    const innerContent = (<div className="summary" dangerouslySetInnerHTML={{ __html: t('CareerDetails.html') }} />);
     return (
-      <Section
-        className="summary-section"
-        icon={icon || 'user'}
-        title={sectionTitle || 'Career Profile'}
+      <Career
+        icon={'user'}
+        title={t('CareerDetails.title')}
       >
         {innerContent}
-      </Section>
+      </Career>
     );
   }
 
-  render() {
+  return (
+    <div className="wrapper">
+      <Sidebar
+        {...props.profile}
+      />
+      <div className="main-wrapper">
+        {renderCareerProfile()}
+        {renderExperiencesSection()}
+        {renderTags()}
+        {renderOpenSourcePart()}
+      </div>
+    </div>
+  );
 
-    return (
-      <Suspense fallback="Loading">
-        <div className="wrapper">
-          <Sidebar
-            {...this.props.profile}
-          />
-          <div className="main-wrapper">
-            {this.renderCareerProfile()}
-            {this.renderExperiencesSection()}
-            {/* {this.renderProjectsSection()} */}
-            {this.renderTags()}
-            {this.renderOpenSourcePart()}
-          </div>
-        </div>
-      </Suspense>
-    );
-  }
 }
-
-CV.propTypes = {
-  profile: PropTypes.shape().isRequired,
-  careerProfile: PropTypes.shape().isRequired,
-  experiences: PropTypes.shape().isRequired,
-  projects: PropTypes.shape().isRequired,
-  tags: PropTypes.shape().isRequired
-};
 
 export default CV

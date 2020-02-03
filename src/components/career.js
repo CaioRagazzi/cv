@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class Section extends Component {
+class Career extends Component {
   render() {
     return (
       <section className={`section ${this.props.className || ''}`} id={this.props.id || null}>
@@ -15,12 +15,4 @@ class Section extends Component {
   }
 }
 
-export default Section
-
-Section.propTypes = {
-  className: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-  id: PropTypes.string
-};
+export default Career

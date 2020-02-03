@@ -1,11 +1,12 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Switch from "react-switch";
 
 function ProfileContainer(props) {
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(false)
+  const currentLanguage = i18n.languages[0]
+  const [language, setLanguage] = useState(currentLanguage.includes('pt') ? false : true)
 
   const renderProfilePicture = (imagePath) => {
     if (imagePath) {
@@ -14,22 +15,26 @@ function ProfileContainer(props) {
     return null;
   }
 
-  const changeLanguage = ( checked, event, id) => {
+  const changeLanguage = (checked, event, id) => {
     setLanguage(!language)
     if (language) {
-      i18n.changeLanguage('en')      
+      i18n.changeLanguage('pt-BR')
     } else {
-      i18n.changeLanguage('pt-BR')      
-
+      i18n.changeLanguage('en')
     }
   }
 
-  return (
+  return (    
     <div className="profile-container">
-      {/* <Switch checked={language} onChange={changeLanguage} className="name"></Switch> */}
+      <div className="d-flex justify-content-center">
+        <p className="pr-3"> { t('LanguageDetails.portuguese') } </p>
+        <Switch offColor={'#1E90FF'} onColor={'#888'} checkedIcon={false} uncheckedIcon={false} height={22} width={50} checked={language} onChange={changeLanguage} className="name"></Switch>
+        <p className="pl-3"> { t('LanguageDetails.english') } </p>
+      </div>
+
       {renderProfilePicture(props.imagePath)}
-      <h1 className="name" style={{ fontSize: 25 }}>{props.name}</h1>
-      <h3 className="tagline"> {props.title} </h3>
+      <h1 className="name" style={{ fontSize: 25 }}>{t('ProfileDetails.name')}</h1>
+      <h3 className="tagline"> {t('ProfileDetails.title')} </h3>
     </div>
   );
 

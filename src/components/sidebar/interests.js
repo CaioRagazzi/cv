@@ -1,27 +1,36 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
-export default class LanguageDetails extends Component {
-  renderListItem(item) {
-    return (
-      <li>
-        {item}
-      </li>
-    );
-  }
-  render() {
-    return (
-      <div className="languages-container container-block">
-        <h2 className="container-block-title">{this.props.title || 'Interests'}</h2>
-        <ul className="list-unstyled interests-list">
-          {this.props.list.map((item) => {
-            return this.renderListItem(item);
-          })}
-        </ul>
-      </div>
-    );
-  }
+function LanguageDetails() {
+  const { t } = useTranslation();
+
+  return (
+    <div className="languages-container container-block">
+      <h2 className="container-block-title">{ t('InterestsDetails.title') }</h2>
+      <ul className="list-unstyled interests-list">
+        <li>
+          { t('InterestsDetails.1') }
+        </li>
+        <li>
+          { t('InterestsDetails.2') }
+        </li>
+        <li>
+          { t('InterestsDetails.3') }
+        </li>
+        <li>
+          { t('InterestsDetails.4') }
+        </li>
+        <li>
+          { t('InterestsDetails.5') }
+        </li>
+      </ul>
+    </div>
+  );
+
 }
+
+export default LanguageDetails
 
 LanguageDetails.propTypes = {
   list: PropTypes.arrayOf(PropTypes.string).isRequired,

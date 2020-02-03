@@ -1,9 +1,107 @@
 {
-    "ContactDetails":{
+    "ContactDetails": {
         "email": "ca.ragazzi@gmail.com",
         "phoneNumber": "+55 (11) 96835-8191",
         "website": "caioragazzi.com/",
         "linkedin": "linkedin.com/in/caioragazzi/",
         "github": "github.com/CaioRagazzi"
+    },
+    "ProfileDetails": {
+        "name": "Caio Rgazzi",
+        "title": "Engenheiro de Software"
+    },
+    "EducationDetails": {
+        "title": "Educação",
+        "school": "Universidade Anhembi Morumbi",
+        "name": " Análise e Desenvolvimento de Sistemas",
+        "date": "2016-2018"
+    },
+    "InterestsDetails": {
+        "title": "Interesses",
+        "1": "Música",
+        "2": "Blues",
+        "3": "Tecnologia",
+        "4": "Livros",
+        "5": "Guitarra"
+    },
+    "LanguagesDetails": {
+        "title": "Línguas",
+        "portuguese": {
+            "title": "Português",
+            "level": "Nativo"
+        },
+        "english": {
+            "title": "Inglês",
+            "level": "Profissional"
+        }
+    },
+    "CareerDetails": {
+        "title": "Sobre mim",
+        "html": "<p>Engenheiro de software.</br>Especializado em Javascript Frameworks (Node, React, React Native e Vue).</br>Também possuo experiência profissional trabalhando com C# com .Net Core, TDD, DDD, Entity entre outros.</br>Procurando sempre expandir meus conhecimentos na área de desenvolvimento de softwares para aplicações web e mobile.<br/>Particularmente adoro Frameworks que utilizam JavaScript.<br/>Formado em Análise e Desenvolvimento de Sistemas na Universidade Anhembi Morumbi.</p>"
+    },
+    "ExperiencesDetails": {
+        "title": "Experiências",
+        "1": {
+            "title": "Desenvolvedor Full-Stack",
+            "company": "Ragazzi Tech",
+            "description": "Atuo como desenvolvedor front-end, back-end e mobile nos projetos da empresa utilizando os seguintes frameworks: </br> <ul><li>Vue Js / React Js para aplicações front-end.</li><li>Node Js para aplicações back-end (API's).</li><li>React Native para aplicações mobile.</li></ul>",
+            "companyLink": "https://ragazzitech.herokuapp.com/",
+            "companyShortDetail": "",
+            "date": "2017.01 - Presente"
+        },
+        "2": {
+            "title": "Desenvolvedor Full-Stack",
+            "company": "Intermeio Soluções de Pagamento",
+            "description": "Desenvolvedor front-end, back-end e mobile nos projetos da empresa utilizando os seguintes frameworks:: </br><ul><li>Back-end: .Net, .Net Core, C#, Web API, Entity Framework.</li><li>Front-end: VueJs, Javascript, Typescript.</li><li>Mobile: Flutter and Dart e Java</li></ul>",
+            "companyLink": "https://intermeio.com/",
+            "companyShortDetail": "",
+            "date": "2019.03 - 2019.11"
+        },
+        "3": {
+            "title": "Desenvolvedor Full-Stack",
+            "company": "Everis",
+            "description": "<ul><li>Atuação em time de Desenvolvimento Ágil.</li><li>Criação e manutenção de Sistemas do banco Itaú utilizando .Net, .Net Core, C#, DDD, TDD, WEB API, Asp.net MVC, Entity Framework, HTML5, CSS, Javascript, JQuery, banco de Dados SQL Server e Sybase.</li><li>Criação de pipeline de Continuous Integration e Continuous Delivery (CI/CD) para automação de aplicação em .Net Core.</li><li>Criação de pipeline de Continuous Integration e Continuous Delivery (CI/CD) para automação de aplicação em .Net Core.</li></ul>",
+            "companyLink": "https://www.everis.com/brazil/pt-br/home-br",
+            "companyShortDetail": "",
+            "date": "2018.08 - 2019.03"
+        },
+        "4": {
+            "title": "Analista de Suporte",
+            "company": "Orbium",
+            "description": "<ul><li>Coordenador de Suporte Técnico.</li><li>Suporte a CRM para mais de 25 grandes empresas.</li><li>Análise de queries SQL (Procedures, views, functions, triggers e etc).</li><li>Criação de queries SQL (Procedures, views, functions, triggers e etc).</li><li>Tunning em SQL para melhor performance.</li><li>Tunning em Windows Server para melhor performance.</li><li>Monitoração do CRM in loco.</li><li>Monitoração dos serviços utilizados pelo CRM (Zabbix).</li><li>Configuração de ambiente Windows Server para operação do CRM (IIS, ASP.NET, Windows Services e etc).</li><li>Configuração de ambiente SQL Server para operação do CRM (SQL Server Instalação e Configuração).</li><li>Testes funcionais e testes para detecção de bugs.</li><li>Implementação técnica do CRM em novos clientes.</li></ul>",
+            "companyLink": "http://www.orbium.com.br/",
+            "companyShortDetail": "",
+            "date": "2012.06 - 2018.08"
+        }
+    },
+    "SkiilsDetails":{
+        "title": "Skills",
+        "1": "Javascript",
+        "2": "ReactJS",
+        "3": "React Native",
+        "4": "Redux",
+        "5": "Flutter",
+        "6": "Dart",
+        "7": "Npm/Yarn",
+        "8": "Git",
+        "9": "C#",
+        "10": "ASP.NET",
+        "11": "SOLID PRINCIPLES",
+        "12": "LINQ",
+        "13": "Microsoft .NET",
+        "14": "Microsoft SQL Server",
+        "15": "HTML5",
+        "16": "CSS",
+        "17": "Jenkins",
+        "18": "Entity Framework",
+        "20": "MongoDB",
+        "21": "mongoose",
+        "22": "Node JS",
+        "23": "VueJS",
+        "24": "Restful api"
+    },
+    "LanguageDetails": {
+        "portuguese": "Português",
+        "english": "Inglês"
     }
 }

@@ -5,5 +5,103 @@
         "website": "caioragazzi.com/",
         "linkedin": "linkedin.com/in/caioragazzi/",
         "github": "github.com/CaioRagazzi"
+    },
+    "ProfileDetails":{
+        "name": "Caio Rgazzi",
+        "title": "Software Engineer"
+    },
+    "EducationDetails":{
+        "title": "Education",
+        "school": "Anhembi Morumbi University",
+        "name": "Analysis and Development of Computer Systems",
+        "date": "2016-2018"
+    },
+    "InterestsDetails":{
+        "title": "Interests",
+        "1": "Music",
+        "2": "Blues",
+        "3": "Technology",
+        "4": "Books",
+        "5": "Guitars"
+    },
+    "LanguagesDetails":{
+        "title": "Language",
+        "portuguese":{
+            "title": "Portuguese",
+            "level": "Native"
+        },
+        "english":{
+            "title": "English",
+            "level": "Professional"
+        }
+    },
+    "CareerDetails":{
+        "title": "Career Profile",
+        "html": "<p>Full Stack developer.</br>I am specialized in JavaScript Frameworks such as Node, React, React Native and Vue.</br>Also, I have professional experience working with C# with .Net Core, TDD, DDD, Entity and more.</br>Always looking to expand my knowledge in the area of ​​software development for web and mobile applications.<br/>I particularly love frameworks that use JavaScript.<br/>Graduated in Systems Analysis and Development at Anhembi Morumbi University.</p>"
+    },
+    "ExperiencesDetails": {
+        "title": "Experiences",
+        "1": {
+            "title": "Full-Stack Developer",
+            "company": "Ragazzi Tech",
+            "description": "I'm a full stack developer in the company using the following frameworks: </br> <ul><li>ReactJS and VueJs in the front-end.</li><li>NodeJS in the back-end.</li><li>React Native for mobile applications.</li></ul>",
+            "companyLink": "https://ragazzitech.herokuapp.com/",
+            "companyShortDetail": "",
+            "date": "2017.01 - Present"
+        },
+        "2": {
+            "title": "Full-Stack Developer",
+            "company": "Intermeio Soluções de Pagamento",
+            "description": "I'm working as a full stack developer at Intermeio using: </br><ul><li>Net Core / Entity Framework in the back-end for the main API</li><li>VueJS for the front-end application</li><li>Flutter for mobile applications</li></ul>",
+            "companyLink": "https://intermeio.com/",
+            "companyShortDetail": "",
+            "date": "2019.03 - 2019.11"
+        },
+        "3": {
+            "title": "Full-Stack Developer",
+            "company": "Everis",
+            "description": "<ul><li>Experience in development and maintenance of .Net, .Net Core, C#, DDD, TDD, WEB API, Asp.net MVC, Entity Framework, HTML5, CSS, Javascript, SQL Server and Sybase.</li><li>Development of Continuous Integration & Continuous Delivery (CI/CD) pipelines for automatization of .Net Core application.</li><li>Experience in Git, Fortify, Sonar, Artifactory, GitLab, Jenkins, Puppet</li><li>Ability to work with minimal supervision yet maturity to seek advice when needed.</li></ul>",
+            "companyLink": "https://www.everis.com/brazil/pt-br/home-br",
+            "companyShortDetail": "",
+            "date": "2018.08 - 2019.03"
+        },
+        "4": {
+            "title": "Support analyst",
+            "company": "Orbium",
+            "description": "<ul><li>CRM support for over 25 companies.</li><li>Monitoring of CRM in loco and services used by CRM (Zabbix).</li><li>Technical implementation of CRM for new clients;</li><li>Experience in functional and non-functional tests.</li><li>Test and support in-house software products.</li><li>Windows Server environment configuration for CRM operations (IIS, ASP.NET, Windows Services, and others).</li><li>Analyse and development of SQL Server (Procedures, views, functions, triggers, and others).</li><li>Improvement in performance of SQL and Windows Server Tunning.</li><li>SQL Server environment configuration for CRM operation (SQL Server installation and configuration).</li><li>Identification of software bugs;</li></ul>",
+            "companyLink": "http://www.orbium.com.br/",
+            "companyShortDetail": "",
+            "date": "2012.06 - 2018.08"
+        }
+    },
+    "SkiilsDetails":{
+        "title": "Skills & Proficiency",
+        "1": "Javascript",
+        "2": "ReactJS",
+        "3": "React Native",
+        "4": "Redux",
+        "5": "Flutter",
+        "6": "Dart",
+        "7": "Npm/Yarn",
+        "8": "Git",
+        "9": "C#",
+        "10": "ASP.NET",
+        "11": "SOLID PRINCIPLES",
+        "12": "LINQ",
+        "13": "Microsoft .NET",
+        "14": "Microsoft SQL Server",
+        "15": "HTML5",
+        "16": "CSS",
+        "17": "Jenkins",
+        "18": "Entity Framework",
+        "20": "MongoDB",
+        "21": "mongoose",
+        "22": "Node JS",
+        "23": "VueJS",
+        "24": "Restful api"
+    },
+    "LanguageDetails": {
+        "portuguese": "Portuguese",
+        "english": "English"
     }
 }
