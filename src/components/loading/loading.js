@@ -14,11 +14,13 @@ export default function Loading() {
     };
 
     return (
-        <div>
-            <Lottie options={defaultOptions}
-                height={400}
-                width={400}
-            />
+        <div style={{ overflowY: scroll, width: "100%" }}>
+            <div style={{ height: "80vh" }} className="d-flex align-items-center">
+                <Lottie options={defaultOptions}
+                    height={400}
+                    width={400}
+                />
+            </div>
         </div>
     )
 }

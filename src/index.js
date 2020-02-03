@@ -6,5 +6,5 @@ import './i18next/i18n';
 import Loading from "../src/components/loading/loading";
 
 
-ReactDOM.render(<Suspense fallback={<Loading />}><CV {...Data} /></Suspense>, global.document.getElementById('root'));
+ReactDOM.render(<Suspense fallback={<Loading />}><Loading /></Suspense>, global.document.getElementById('root'));
 
