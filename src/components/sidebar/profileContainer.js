@@ -7,11 +7,7 @@ function ProfileContainer(props) {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.languages[0]
   
-  useEffect(() => {
-    i18n.changeLanguage('en')
-  }, [])
-  
-  const [language, setLanguage] = useState(true)
+  const [language, setLanguage] = useState(currentLanguage.includes('pt') ? false : true)
 
   const renderProfilePicture = (imagePath) => {
     if (imagePath) {
@@ -22,7 +18,7 @@ function ProfileContainer(props) {
 
   const changeLanguage = (checked, event, id) => {
     setLanguage(checked)
-    if (language) {
+    if (!checked) {
       i18n.changeLanguage('pt-BR')
     } else {
       i18n.changeLanguage('en')
