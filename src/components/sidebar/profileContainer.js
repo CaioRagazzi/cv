@@ -6,6 +6,18 @@ import Switch from "react-switch";
 function ProfileContainer(props) {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.languages[0]
+
+  useEffect(() => {
+    setLanguage(currentLanguage.includes('pt') ? false : true)
+  }, [currentLanguage])
+
+  useEffect(() => {
+    if (currentLanguage.includes('pt')) {
+      changeLanguage(false)
+    } else {
+      changeLanguage(true)
+    }
+  }, [language])
   
   const [language, setLanguage] = useState(currentLanguage.includes('pt') ? false : true)
 
