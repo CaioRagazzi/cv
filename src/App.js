@@ -2,53 +2,64 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import './assets/theme/styles.css';
+import { useTranslation } from 'react-i18next';
 import Career from './components/career';
 import Sidebar from './components/sidebar';
 import Experiences from './components/experiences';
 import Projects from './components/projects';
 import Tags from './components/tags';
-import { useTranslation } from 'react-i18next';
 
 function CV(props) {
-  const { t, i18n } = useTranslation();
+  const {
+    experiences,
+    projects,
+    tags,
+    profile
+  } = props;
+
+  const { t } = useTranslation();
 
   const renderExperiencesSection = () => {
-    if (props.experiences) {
+    if (experiences) {
       return (<Experiences {...props.experiences} />);
     }
     return null;
-  }
+  };
+
   const renderProjectsSection = () => {
-    if (props.projects) {
+    if (projects) {
       return (<Projects {...props.projects} />);
     }
     return null;
-  }
+  };
+
   const renderTags = () => {
-    if (props.tags) {
+    if (tags) {
       return (<Tags {...props.tags} />);
     }
     return null;
-  }
+  };
+
   const renderOpenSourcePart = () => {
-    return (<div></div>);
-  }
+    return (<div />);
+  };
+
   const renderCareerProfile = () => {
     const innerContent = (<div className="summary" dangerouslySetInnerHTML={{ __html: t('CareerDetails.html') }} />);
     return (
       <Career
-        icon={'user'}
+        icon="user"
         title={t('CareerDetails.title')}
       >
         {innerContent}
       </Career>
     );
-  }
+  };
 
   return (
     <div className="wrapper">
       <Sidebar
-        {...props.profile}
+        {...profile}
       />
       <div className="main-wrapper">
         {renderCareerProfile()}
@@ -58,7 +69,6 @@ function CV(props) {
       </div>
     </div>
   );
-
 }
 
-export default CV
+export default CV;
