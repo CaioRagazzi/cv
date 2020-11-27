@@ -36,7 +36,7 @@
     }
   },
   "CareerDetails": {
-    "title": "Aboute me",
+    "title": "About me",
     "html": "<p>Full Stack developer.</br>I am specialized in JavaScript Frameworks such as Node, React, React Native, Vue and Angular.</br>Also, I have professional experience working with C# with .Net Core, TDD, DDD, Entity and more.</br>Always looking to expand my knowledge in the area of ​​software development for web and mobile applications.<br/>I particularly love frameworks that use JavaScript.<br/>Graduated in Systems Analysis and Development at Anhembi Morumbi University.</p>"
   },
   "ExperiencesDetails": {
