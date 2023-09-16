@@ -1,7 +1,7 @@
 {
   "ContactDetails": {
     "email": "ca.ragazzi@gmail.com",
-    "phoneNumber": "+55 (11) 96835-8191",
+    "phoneNumber": "+351 915 283 609",
     "website": "caioragazzi.com/",
     "linkedin": "linkedin.com/in/caioragazzi/",
     "github": "github.com/CaioRagazzi"
@@ -11,10 +11,18 @@
     "title": "Software Engineer"
   },
   "EducationDetails": {
-    "title": "Education",
-    "school": "Anhembi Morumbi University",
-    "name": "Analysis and Development of Computer Systems",
-    "date": "2016-2018"
+    "1": {
+      "title": "Education",
+      "school": "Anhembi Morumbi University",
+      "name": "Analysis and Development of Computer Systems",
+      "date": "2016-2018"
+    },
+    "2": {
+      "title": "Education",
+      "school": "FIAP",
+      "name": "MBA Software Engineer",
+      "date": "2020-2021"
+    }
   },
   "InterestsDetails": {
     "title": "Interests",
@@ -37,7 +45,7 @@
   },
   "CareerDetails": {
     "title": "About me",
-    "html": "<p>Full Stack developer.</br>I am specialized in JavaScript Frameworks such as Node, React, React Native, Vue and Angular.</br>Also, I have professional experience working with C# with .Net Core, TDD, DDD, Entity and more.</br>Always looking to expand my knowledge in the area of ​​software development for web and mobile applications.<br/>I particularly love frameworks that use JavaScript.<br/>Graduated in Systems Analysis and Development at Anhembi Morumbi University.</p>"
+    "html": "<p>Hello!</br></br>I'm Caio and I am a software engineer.</br></br>I'm a dedicated problem solver with a passion for using software to tackle business and individual challenges. I'm the type of person who believes that there's always room for improvement, which is why I find joy in refactoring and relentlessly pursuing the optimal solutions. This mindset drives me to incorporate unit tests as a regular practice in my daily work.</br></br>With over five years of experience in software development, a significant portion of my journey has been within the banking industry. My involvement has spanned a diverse range of projects, from the user's initial interaction with the bank during account creation to optimizing internal workflows. I approach technology with an open mind and haven't tied myself to any particular operating system, programming language, or technology. However, a majority of the projects I've contributed to have utilized the .NET stack (both Framework and Core), Angular, and SQL Server.</br></br>In my free time when I am not working on my applications (one of them is listed in the Projects section below), I am trying to learn something new by reading books, watching video courses, or teaching friends. Also, I am a cyclist enthusiast and love to be on the road riding my bike!</p>"
   },
   "ExperiencesDetails": {
     "title": "Experiences",
@@ -74,12 +82,28 @@
       "date": "2012.06 - 2018.08"
     },
     "5": {
-      "title": "Engenheiro de Software / DevOps",
+      "title": "Software Engineer / DevOps",
       "company": "Orbium Soluções Interativas",
       "description": "Full Stack Software Developer, current working in projects using the following frameworks: </br><ul><li>.net Framework</li><li>.net Core</li><li>Angular</li><li>SQL</li></ul>Also acting in the CI / CD team that is responsible for creating and giving maintenance  in the company DevOps culture, using the following tools: </br><ul><li>Jenkins</li><li>SonarQube</li><li>GitLab</li><li>Azure Packages</li><li>AWS</li><li>Microsoft Teams</li></ul>",
       "companyLink": "http://www.orbium.com.br/",
       "companyShortDetail": "",
       "date": "2020.01 - Present"
+    },
+    "6": {
+      "title": "Senior Software Developer Consultant",
+      "company": "Aubay Portugal",
+      "description": "Currently working at Natixis Portugal.</br></br>At Natixis I am working on a team responsible to create new web applications and integrations to make internal departments to focus more on their job itself other than tools (mostly excel files), and with that avoid the known problems that these tools can provide such as security breaches, human error, inconsistencies, lack of scalability and etc.</br></br>We create most of the applications using the stack .Net Core, Angular 2+ and SQL Server, but always open minded to choose the correct technology that will solve the problem we are facing in the better way possible.",
+      "companyLink": "https://www.aubay.pt/",
+      "companyShortDetail": "",
+      "date": "2020.05 - 2022.12"
+    },
+    "7": {
+      "title": "Senior Software Engineer | Web Applications | CI/CD",
+      "company": "Natixis in Portugal",
+      "description": "Recognizing my capabilities, Natixis facilitated my transition from Aubay's consultant to Senior Software Engineer.</br></br>Senior Software Engineer, specialized in developing web applications. My forte lies in addressing challenges, especially within banking. I excel at creating scalable software solutions, and staying attuned to the latest tech. With a rich background, I consistently showcase leading teams, guiding talents, and continuous improvement.</br></br>Responsibilities:</br></br><ul><li>Orchestrate creation and maintenance of web applications tailored to diverse client requirements, primarily within banking.</li><li>Implement best practices for robust, scalable software solutions.</li><li>Act as a catalyst for innovative approaches across projects.</li><li>Contribute expertise to code reviews, ensuring quality.</li><li>Execute validation and verification tests for application reliability.</li><li>Manage CI/CD pipelines, focusing on agility, and scalability.</li><li>Collaborate with .Net Core 7, Angular, SQL Server, Jenkins, SonarQube, XLRelease, XLDeploy, Bitbucket.</li><li>Engineer robust ETL solutions integrating internal and external applications using SSIS and Control-M.</li></ul>Key Achievements:</br></br><ul><li>Pioneered efficient CI/CD pipelines, reducing deployment cycles, and enhancing scalability.</li><li>Nurtured the growth of 3 junior team members and interns, contributing to their advancement.</li><li>Streamlined ETL processes, ensuring integration between critical systems and external apps.</li></ul>",
+      "companyLink": "https://natixis.groupebpce.com/",
+      "companyShortDetail": "",
+      "date": "2020.12 - Current"
     }
   },
   "SkiilsDetails": {

@@ -13,7 +13,6 @@
     "i18next": "23.5.1",
     "i18next-browser-languagedetector": "7.1.0",
     "i18next-xhr-backend": "^3.2.2",
-    "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dev-utils": "12.0.1",
     "react-dom": "18.2.0",
@@ -27,9 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "devDependencies": {
-    "extract-text-webpack-plugin": "3.0.2"
-  },
+  "devDependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",
