@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build"
+    "build": "react-scripts build"
   },
   "devDependencies": {
     "extract-text-webpack-plugin": "3.0.2"
